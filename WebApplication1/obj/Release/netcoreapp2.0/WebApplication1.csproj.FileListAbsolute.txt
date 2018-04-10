@@ -1,0 +1,10 @@
+/app/WebApplication1/bin/Release/netcoreapp2.0/WebApplication1.deps.json
+/app/WebApplication1/bin/Release/netcoreapp2.0/WebApplication1.runtimeconfig.json
+/app/WebApplication1/bin/Release/netcoreapp2.0/WebApplication1.runtimeconfig.dev.json
+/app/WebApplication1/bin/Release/netcoreapp2.0/WebApplication1.dll
+/app/WebApplication1/bin/Release/netcoreapp2.0/WebApplication1.pdb
+/app/WebApplication1/obj/Release/netcoreapp2.0/WebApplication1.csproj.CoreCompileInputs.cache
+/app/WebApplication1/obj/Release/netcoreapp2.0/WebApplication1.AssemblyInfoInputs.cache
+/app/WebApplication1/obj/Release/netcoreapp2.0/WebApplication1.AssemblyInfo.cs
+/app/WebApplication1/obj/Release/netcoreapp2.0/WebApplication1.dll
+/app/WebApplication1/obj/Release/netcoreapp2.0/WebApplication1.pdb
