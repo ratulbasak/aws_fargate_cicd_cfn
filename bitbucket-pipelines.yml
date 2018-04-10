@@ -14,14 +14,14 @@ pipelines:
             - pip install gitpython
             - apt-get update && apt-get install -y zip
             - python gitpy.py
-            - git checkout -b stage
-            - git add .
-            - git config --global user.email "ratulbasak93@gmail.com"
-            - git config --global user.name "ratulbasak93"
-            - git commit -m "updated repo"
+            #- git checkout -b stage
+            #- git add .
+            #- git config --global user.email "ratulbasak93@gmail.com"
+            #- git config --global user.name "ratulbasak93"
+            #- git commit -m "updated repo"
             #- git config --local -l
-            - git push origin stage
-            - zip -r dotnet-api.zip ./*
-            - python s3_upload.py codebase-build dotnet-api.zip dotnet-api.zip #  run the deployment script
+            #- git push origin stage
+            #- zip -r dotnet-api.zip ./*
+            #- python s3_upload.py codebase-build dotnet-api.zip dotnet-api.zip #  run the deployment script
             # Example command line parameters. Replace with your values
             #- python s3_upload.py bb-s3-upload SampleApp_Linux.zip SampleApp_Linux # run the deployment script
