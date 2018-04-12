@@ -83,7 +83,7 @@ echo ''
 ###################### CHANGE PRIORITY NUMBER IN YML ###################
 #####################################################################################
 
-find_priority=`awk '/Priority:/{nr[NR+2]}; NR in nr' fargate_from_scratch.yml`
+find_priority=`grep -o 'Priority: .*' fargate_from_scratch.yml`
 
 
 get_priority_number=`echo $find_priority | awk 'match($0,":"){print substr($0,RSTART+1,2)}'`
@@ -93,5 +93,5 @@ echo 'get priority number: ' $get_priority_number
 changed_priority_number=`echo $(($get_priority_number + 1))`
 echo 'changed priority: ' $changed_priority_number
 ####### SPACING AFTER DEFAULT: 2   NEEDED ###########3
-sed -i "s/Default:$get_priority_number  /Default: $changed_priority_number  /" fargate_from_scratch.yml
+sed -i "s/Priority:$get_priority_number/Priority: $changed_priority_number/" fargate_from_scratch.yml
 echo 'changed PRIORITY NUMBER in YML: ' $changed_priority_number
