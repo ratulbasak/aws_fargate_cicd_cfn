@@ -26,10 +26,10 @@ RUN ls /app/WebApplication1/bin/Release/netcoreapp2.0/
 
 
 # Expose a port number from the container to outside world
-ENV port=5003
+ENV port=5000
 ENV ASPNETCORE_URLS=http://+:$port
 
-EXPOSE 83
+EXPOSE 80
 
 #ENTRYPOINT ASPNETCORE_URLS='http://*:'$port dotnet /app/WebApplication1/bin/Release/netcoreapp2.0/WebApplication1.dll
 
